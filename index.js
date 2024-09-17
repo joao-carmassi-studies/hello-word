@@ -22,7 +22,7 @@ btn.addEventListener("click", () => {
     span.innerHTML = "";
     intervalo = setInterval(montaFrase, velocidade);
   } else {
-    alert("Não os inputs vazios");
+    alert("Não deixe os inputs vazios");
   }
 });
 
