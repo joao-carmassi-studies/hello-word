@@ -16,10 +16,14 @@ let intervalo;
 // Código -----
 btn.addEventListener("click", () => {
   frase = document.getElementById("inputFrase").value;
-  fraseSeparada = frase.split("");
   velocidade = document.getElementById("inputIntervalo").value;
-  span.innerHTML = "";
-  intervalo = setInterval(montaFrase, velocidade);
+  if (frase != "" && velocidade != "") {
+    fraseSeparada = frase.split("");
+    span.innerHTML = "";
+    intervalo = setInterval(montaFrase, velocidade);
+  } else {
+    alert("Não os inputs vazios");
+  }
 });
 
 function montaFrase() {
