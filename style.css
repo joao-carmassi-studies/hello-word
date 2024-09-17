@@ -1,0 +1,148 @@
+:root {
+  --corBrilho: #4000ff;
+}
+
+body {
+  height: 100svh;
+  background-color: #060508;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+div {
+  background-color: #191622;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  height: 43px;
+  background-color: #352e48;
+  display: flex;
+  align-items: center;
+}
+
+header > span {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-left: 15px;
+}
+
+header > span:nth-child(1) {
+  background-color: #ff5f5a;
+}
+header > span:nth-child(2) {
+  background-color: #ffbe2e;
+}
+header > span:nth-child(3) {
+  background-color: #2aca44;
+}
+
+div > span {
+  height: calc(100% - 35px - 30px);
+  width: calc(100% - 30px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  overflow: auto;
+  text-align: end;
+}
+
+.painelPreto {
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 8px 23px;
+  color: white;
+  transition-duration: 0.5s;
+  font-size: 18px;
+}
+
+button:hover,
+button:focus {
+  background-color: white;
+  border: 1px solid #191622;
+  color: #191622;
+}
+
+@media only screen and (min-width: 1024px) {
+  div {
+    height: 500px;
+    aspect-ratio: 12/9;
+    width: unset;
+  }
+
+  div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--corBrilho);
+    border-radius: 13px;
+    z-index: -1;
+    padding: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--corBrilho);
+    border-radius: 13px;
+    z-index: -1;
+    padding: 2px;
+    filter: blur(15px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header {
+    -webkit-border-top-left-radius: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -moz-border-radius-topright: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+}
