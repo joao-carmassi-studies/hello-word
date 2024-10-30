@@ -8,4 +8,4 @@
 * JavaScript
 
 ## Link:
-https://joao-carmassi.github.io/HelloWord/
+https://joao-carmassi.github.io/hello-word/
