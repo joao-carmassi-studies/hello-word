@@ -1,6 +1,6 @@
 // Vars -----
 const alphabet =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789!?.,;: àáâãäåèéêëìíîïðòóôõö÷øùúûüýÿÀÁÂÃÄÅÈÉÊËÌÍÎÏÐÒÓÔÕÖ×ØÙÚÛÜÝ@#$%^&*()-_=+[]{}|\\`~\"'<>\n\r\t";
+  " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?.,;:àáâãäåèéêëìíîïðòóôõö÷øùúûüýÿÀÁÂÃÄÅÈÉÊËÌÍÎÏÐÒÓÔÕÖ×ØÙÚÛÜÝ@#$%^&*()-_=+[]{}|\\`~\"'<>\n\r\t";
 const listaDeLetras = alphabet.split("");
 let criandoFrase = [];
 let x = 0;
